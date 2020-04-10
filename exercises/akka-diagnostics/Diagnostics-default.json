@@ -1,0 +1,239 @@
+{
+  "start-time" : "2020-04-09T22:41:57.382",
+  "akka-version" : "2.6.3",
+  "akka-diagnostics-version" : "1.1.12",
+  "classpath" : "/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/test-classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/test-classes/:/C:/Users/Usuario/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.30.jar:/C:/Users/Usuario/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/C:/Users/Usuario/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.13/bundles/scala-parser-combinators_2.13-1.1.2.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.13/jars/akka-diagnostics_2.13-1.1.12.jar:/C:/Users/Usuario/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-akka_2.13/jars/cinnamon-akka_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-java/jars/cinnamon-java-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core-java/jars/cinnamon-core-java-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-common/jars/cinnamon-common-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-scala_2.13/jars/cinnamon-scala_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core_2.13/jars/cinnamon-core_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-jvm-metrics-producer/jars/cinnamon-jvm-metrics-producer-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus/jars/cinnamon-prometheus-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient/bundles/simpleclient-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.12.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus-httpserver/jars/cinnamon-prometheus-httpserver-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient_httpserver/bundles/simpleclient_httpserver-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient_common/bundles/simpleclient_common-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-testkit_2.13/jars/akka-testkit_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/org.scalatest/scalatest_2.13/bundles/scalatest_2.13-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scalatest/scalatest-compatible/bundles/scalatest-compatible-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scalactic/scalactic_2.13/bundles/scalactic_2.13-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/bundles/scala-xml_2.13-1.2.0.jar:/C:/Users/Usuario/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/test-agent-1.2.8.jar:/C:/Users/Usuario/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/test-interface-1.0.jar",
+  "configuration-warnings" : [],
+  "system-metrics" : {
+    "heap-init" : 268435456,
+    "heap-max" : 3803185152,
+    "heap-used" : 63897624,
+    "heap-committed" : 189792256,
+    "os-processors" : 8,
+    "mem-pool-0" : {
+      "name" : "Code Cache",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 251658240,
+      "used" : 8042112,
+      "committed" : 8126464
+    },
+    "mem-pool-1" : {
+      "name" : "Metaspace",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 26747120,
+      "committed" : 28966912
+    },
+    "mem-pool-2" : {
+      "name" : "Compressed Class Space",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 3473120,
+      "committed" : 3801088
+    },
+    "mem-pool-3" : {
+      "name" : "PS Eden Space",
+      "type" : "Heap memory",
+      "init" : 67108864,
+      "max" : 1404043264,
+      "used" : 55797984,
+      "committed" : 67108864
+    },
+    "mem-pool-4" : {
+      "name" : "PS Survivor Space",
+      "type" : "Heap memory",
+      "init" : 11010048,
+      "max" : 11010048,
+      "used" : 0,
+      "committed" : 11010048
+    },
+    "mem-pool-5" : {
+      "name" : "PS Old Gen",
+      "type" : "Heap memory",
+      "init" : 179306496,
+      "max" : 2852126720,
+      "used" : 8099640,
+      "committed" : 111673344
+    }
+  },
+  "configuration" : {
+    "akka" : {
+        "actor" : {
+            "debug" : {
+                "lifecycle" : "on",
+                "unhandled" : "on"
+            }
+        },
+        "loggers" : [
+            "akka.testkit.TestEventListener"
+        ],
+        "logging-filter" : "akka.event.DefaultLoggingFilter",
+        "loglevel" : "DEBUG",
+        "version" : "2.6.3"
+    },
+    "awt" : {
+        "toolkit" : "sun.awt.windows.WToolkit"
+    },
+    "cinnamon" : {
+        "akka" : {
+            "actors" : {
+                "/user/*" : {
+                    "report-by" : "class"
+                }
+            },
+            "dispatchers" : {
+                "basic-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                },
+                "time-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                }
+            }
+        },
+        "prometheus" : {
+            "exporters" : [
+                "http-server"
+            ],
+            "http-server" : {
+                "host" : "192.168.99.100",
+                "port" : 9001
+            }
+        }
+    },
+    "coffee-house" : {
+        "barista" : {
+            "prepare-coffee-duration" : "100 milliseconds"
+        },
+        "caffeine-limit" : 10,
+        "guest" : {
+            "finish-coffee-duration" : "2 seconds"
+        }
+    },
+    "excluded-sensitive-paths" : [
+        "user.home",
+        "user.dir",
+        "user.name"
+    ],
+    "file" : {
+        "encoding" : {
+            "pkg" : "sun.io"
+        },
+        "separator" : "\\"
+    },
+    "java" : {
+        "awt" : {
+            "graphicsenv" : "sun.awt.Win32GraphicsEnvironment",
+            "printerjob" : "sun.awt.windows.WPrinterJob"
+        },
+        "class" : {
+            "path" : "C:\\Users\\Usuario\\Downloads\\Akka LightBend\\LAS-P-lightbend-akka-for-scala-professional-v1\\exercises\\target\\scala-2.13\\test-classes;C:\\Users\\Usuario\\Downloads\\Akka LightBend\\LAS-P-lightbend-akka-for-scala-professional-v1\\exercises\\target\\scala-2.13\\classes;C:\\Users\\Usuario\\Downloads\\Akka LightBend\\LAS-P-lightbend-akka-for-scala-professional-v1\\common\\target\\scala-2.13\\classes;C:\\Users\\Usuario\\Downloads\\Akka LightBend\\LAS-P-lightbend-akka-for-scala-professional-v1\\common\\target\\scala-2.13\\test-classes;C:\\Users\\Usuario\\.ivy2\\cache\\org.scala-lang\\scala-library\\jars\\scala-library-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.typesafe.akka\\akka-actor_2.13\\jars\\akka-actor_2.13-2.6.3.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.typesafe\\config\\bundles\\config-1.4.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scala-lang.modules\\scala-java8-compat_2.13\\jars\\scala-java8-compat_2.13-0.9.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.typesafe.akka\\akka-slf4j_2.13\\jars\\akka-slf4j_2.13-2.6.3.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.slf4j\\slf4j-api\\jars\\slf4j-api-1.7.30.jar;C:\\Users\\Usuario\\.ivy2\\cache\\ch.qos.logback\\logback-classic\\jars\\logback-classic-1.2.3.jar;C:\\Users\\Usuario\\.ivy2\\cache\\ch.qos.logback\\logback-core\\jars\\logback-core-1.2.3.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scala-lang.modules\\scala-parser-combinators_2.13\\bundles\\scala-parser-combinators_2.13-1.1.2.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.akka\\akka-diagnostics_2.13\\jars\\akka-diagnostics_2.13-1.1.12.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.apache.commons\\commons-lang3\\jars\\commons-lang3-3.5.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-akka_2.13\\jars\\cinnamon-akka_2.13-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-java\\jars\\cinnamon-java-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-core-java\\jars\\cinnamon-core-java-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-common\\jars\\cinnamon-common-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-scala_2.13\\jars\\cinnamon-scala_2.13-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-core_2.13\\jars\\cinnamon-core_2.13-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-jvm-metrics-producer\\jars\\cinnamon-jvm-metrics-producer-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-prometheus\\jars\\cinnamon-prometheus-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\io.prometheus\\simpleclient\\bundles\\simpleclient-0.8.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.hdrhistogram\\HdrHistogram\\bundles\\HdrHistogram-2.1.12.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.lightbend.cinnamon\\cinnamon-prometheus-httpserver\\jars\\cinnamon-prometheus-httpserver-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\io.prometheus\\simpleclient_httpserver\\bundles\\simpleclient_httpserver-0.8.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\io.prometheus\\simpleclient_common\\bundles\\simpleclient_common-0.8.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\com.typesafe.akka\\akka-testkit_2.13\\jars\\akka-testkit_2.13-2.6.3.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scalatest\\scalatest_2.13\\bundles\\scalatest_2.13-3.1.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scalatest\\scalatest-compatible\\bundles\\scalatest-compatible-3.1.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scalactic\\scalactic_2.13\\bundles\\scalactic_2.13-3.1.0.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scala-lang\\scala-reflect\\jars\\scala-reflect-2.13.1.jar;C:\\Users\\Usuario\\.ivy2\\cache\\org.scala-lang.modules\\scala-xml_2.13\\bundles\\scala-xml_2.13-1.2.0.jar;C:\\Users\\Usuario\\.sbt\\boot\\scala-2.12.7\\org.scala-sbt\\sbt\\1.2.8\\test-agent-1.2.8.jar;C:\\Users\\Usuario\\.sbt\\boot\\scala-2.12.7\\org.scala-sbt\\sbt\\1.2.8\\test-interface-1.0.jar",
+            "version" : "52.0"
+        },
+        "endorsed" : {
+            "dirs" : "C:\\Program Files\\Java\\jre1.8.0_131\\lib\\endorsed"
+        },
+        "ext" : {
+            "dirs" : "C:\\Program Files\\Java\\jre1.8.0_131\\lib\\ext;C:\\WINDOWS\\Sun\\Java\\lib\\ext"
+        },
+        "home" : "C:\\Program Files\\Java\\jre1.8.0_131",
+        "io" : {
+            "tmpdir" : "C:\\Users\\Usuario\\AppData\\Local\\Temp\\"
+        },
+        "library" : {
+            "path" : "C:\\Program Files\\Java\\jre1.8.0_131\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\Program Files\\Haskell\\bin;C:\\Program Files\\Haskell Platform\\8.6.5\\lib\\extralibs\\bin;C:\\Program Files\\Haskell Platform\\8.6.5\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Broadcom\\Broadcom 802.11 Network Adapter;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Hewlett-Packard\\SimplePass\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\sbt\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Haskell Platform\\8.6.5\\mingw\\bin;C:\\Users\\Usuario\\AppData\\Roaming\\cabal\\bin;C:\\Users\\Usuario\\AppData\\Roaming\\local\\bin;C:\\Users\\Usuario\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Docker Toolbox;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\Usuario\\AppData\\Local\\Programs\\MiKTeX 2.9\\miktex\\bin\\x64\\;C:\\Users\\Usuario\\AppData\\Local\\hyper\\app-3.0.2\\resources\\bin;C:\\Users\\Usuario\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\Usuario\\AppData\\Local\\atom\\bin;C:\\Users\\Usuario\\Documents\\WindowsPowerShell\\Scripts;C:\\Users\\Usuario\\Downloads\\kubernetesmicro;;."
+        },
+        "runtime" : {
+            "name" : "Java(TM) SE Runtime Environment",
+            "version" : "1.8.0_131-b11"
+        },
+        "specification" : {
+            "name" : "Java Platform API Specification",
+            "vendor" : "Oracle Corporation",
+            "version" : "1.8"
+        },
+        "vendor" : {
+            "url" : {
+                "bug" : "http://bugreport.sun.com/bugreport/"
+            }
+        },
+        "version" : "1.8.0_131",
+        "vm" : {
+            "info" : "mixed mode",
+            "name" : "Java HotSpot(TM) 64-Bit Server VM",
+            "specification" : {
+                "name" : "Java Virtual Machine Specification",
+                "vendor" : "Oracle Corporation",
+                "version" : "1.8"
+            },
+            "vendor" : "Oracle Corporation",
+            "version" : "25.131-b11"
+        }
+    },
+    "line" : {
+        "separator" : "\r\n"
+    },
+    "os" : {
+        "arch" : "amd64",
+        "name" : "Windows 10",
+        "version" : "10.0"
+    },
+    "path" : {
+        "separator" : ";"
+    },
+    "sun" : {
+        "arch" : {
+            "data" : {
+                "model" : "64"
+            }
+        },
+        "boot" : {
+            "class" : {
+                "path" : "C:\\Program Files\\Java\\jre1.8.0_131\\lib\\resources.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\rt.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\sunrsasign.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\jsse.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\jce.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\charsets.jar;C:\\Program Files\\Java\\jre1.8.0_131\\lib\\jfr.jar;C:\\Program Files\\Java\\jre1.8.0_131\\classes"
+            },
+            "library" : {
+                "path" : "C:\\Program Files\\Java\\jre1.8.0_131\\bin"
+            }
+        },
+        "cpu" : {
+            "endian" : "little",
+            "isalist" : "amd64"
+        },
+        "desktop" : "windows",
+        "io" : {
+            "unicode" : {
+                "encoding" : "UnicodeLittle"
+            }
+        },
+        "java" : {
+            "command" : "sbt.ForkMain 56979",
+            "launcher" : "SUN_STANDARD"
+        },
+        "jnu" : {
+            "encoding" : "Cp1252"
+        },
+        "management" : {
+            "compiler" : "HotSpot 64-Bit Tiered Compilers"
+        },
+        "os" : {
+            "patch" : {
+                "level" : ""
+            }
+        }
+    },
+    "user" : {
+        "country" : "ES",
+        "language" : "es",
+        "script" : "",
+        "timezone" : "",
+        "variant" : ""
+    }
+}
+}
+
