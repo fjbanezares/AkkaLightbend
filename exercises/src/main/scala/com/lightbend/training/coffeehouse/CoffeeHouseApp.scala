@@ -42,10 +42,6 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
   private val coffeeHouse = createCoffeeHouse()
 
 
-  private val caffeineLimit : Int = system.settings.config.getInt("coffee-house.caffeine-limit")
-
-  log.info("Se ha leido correctamente    " + caffeineLimit )
-
 
   //  private val anonymousActor: ActorRef = system.actorOf(Props(new Actor {
 //    coffeeHouse ! "Brew Coffee"
@@ -63,7 +59,11 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
     Await.ready(system.whenTerminated, Duration.Inf)
   }
 
-  protected def createCoffeeHouse(): ActorRef = system.actorOf(CoffeeHouse.props(caffeineLimit),"coffee-house")
+  protected def createCoffeeHouse(): ActorRef = {
+    val caffeineLimit : Int = system.settings.config.getInt("coffee-house.caffeine-limit")
+    log.info("Se ha leido correctamente    " + caffeineLimit )
+    system.actorOf(CoffeeHouse.props(caffeineLimit),"coffee-house")
+  }
 
 
   //system.deadLetters

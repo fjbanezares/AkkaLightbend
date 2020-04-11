@@ -1,5 +1,5 @@
 {
-  "start-time" : "2020-04-09T22:41:57.382",
+  "start-time" : "2020-04-11T18:15:18.054",
   "akka-version" : "2.6.3",
   "akka-diagnostics-version" : "1.1.12",
   "classpath" : "/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/test-classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/classes/:/C:/Users/Usuario/Downloads/Akka%20LightBend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/test-classes/:/C:/Users/Usuario/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.30.jar:/C:/Users/Usuario/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/C:/Users/Usuario/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.13/bundles/scala-parser-combinators_2.13-1.1.2.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.13/jars/akka-diagnostics_2.13-1.1.12.jar:/C:/Users/Usuario/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-akka_2.13/jars/cinnamon-akka_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-java/jars/cinnamon-java-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core-java/jars/cinnamon-core-java-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-common/jars/cinnamon-common-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-scala_2.13/jars/cinnamon-scala_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core_2.13/jars/cinnamon-core_2.13-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-jvm-metrics-producer/jars/cinnamon-jvm-metrics-producer-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus/jars/cinnamon-prometheus-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient/bundles/simpleclient-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.12.jar:/C:/Users/Usuario/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus-httpserver/jars/cinnamon-prometheus-httpserver-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient_httpserver/bundles/simpleclient_httpserver-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/io.prometheus/simpleclient_common/bundles/simpleclient_common-0.8.0.jar:/C:/Users/Usuario/.ivy2/cache/com.typesafe.akka/akka-testkit_2.13/jars/akka-testkit_2.13-2.6.3.jar:/C:/Users/Usuario/.ivy2/cache/org.scalatest/scalatest_2.13/bundles/scalatest_2.13-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scalatest/scalatest-compatible/bundles/scalatest-compatible-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scalactic/scalactic_2.13/bundles/scalactic_2.13-3.1.0.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.13.1.jar:/C:/Users/Usuario/.ivy2/cache/org.scala-lang.modules/scala-xml_2.13/bundles/scala-xml_2.13-1.2.0.jar:/C:/Users/Usuario/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/test-agent-1.2.8.jar:/C:/Users/Usuario/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/test-interface-1.0.jar",
@@ -7,56 +7,56 @@
   "system-metrics" : {
     "heap-init" : 268435456,
     "heap-max" : 3803185152,
-    "heap-used" : 63897624,
-    "heap-committed" : 189792256,
+    "heap-used" : 228665160,
+    "heap-committed" : 375390208,
     "os-processors" : 8,
     "mem-pool-0" : {
       "name" : "Code Cache",
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 251658240,
-      "used" : 8042112,
-      "committed" : 8126464
+      "used" : 8511488,
+      "committed" : 8585216
     },
     "mem-pool-1" : {
       "name" : "Metaspace",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 26747120,
-      "committed" : 28966912
+      "used" : 26156816,
+      "committed" : 28049408
     },
     "mem-pool-2" : {
       "name" : "Compressed Class Space",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : 1073741824,
-      "used" : 3473120,
-      "committed" : 3801088
+      "used" : 3373528,
+      "committed" : 3670016
     },
     "mem-pool-3" : {
       "name" : "PS Eden Space",
       "type" : "Heap memory",
       "init" : 67108864,
-      "max" : 1404043264,
-      "used" : 55797984,
-      "committed" : 67108864
+      "max" : 1406664704,
+      "used" : 219623288,
+      "committed" : 255328256
     },
     "mem-pool-4" : {
       "name" : "PS Survivor Space",
       "type" : "Heap memory",
       "init" : 11010048,
-      "max" : 11010048,
-      "used" : 0,
-      "committed" : 11010048
+      "max" : 7864320,
+      "used" : 1835168,
+      "committed" : 7864320
     },
     "mem-pool-5" : {
       "name" : "PS Old Gen",
       "type" : "Heap memory",
       "init" : 179306496,
       "max" : 2852126720,
-      "used" : 8099640,
-      "committed" : 111673344
+      "used" : 8167968,
+      "committed" : 112197632
     }
   },
   "configuration" : {
@@ -109,11 +109,15 @@
     },
     "coffee-house" : {
         "barista" : {
+            "accuracy" : 20,
             "prepare-coffee-duration" : "100 milliseconds"
         },
         "caffeine-limit" : 10,
         "guest" : {
-            "finish-coffee-duration" : "2 seconds"
+            "finish-coffee-duration" : "100 milliseconds"
+        },
+        "waiter" : {
+            "max-complaint-count" : 2
         }
     },
     "excluded-sensitive-paths" : [
@@ -212,7 +216,7 @@
             }
         },
         "java" : {
-            "command" : "sbt.ForkMain 56979",
+            "command" : "sbt.ForkMain 50944",
             "launcher" : "SUN_STANDARD"
         },
         "jnu" : {

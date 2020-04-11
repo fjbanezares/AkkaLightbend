@@ -1,7 +1,7 @@
 package com.lightbend.training.coffeehouse
 
 import java.util.concurrent.TimeUnit
-import akka.actor.{Actor, ActorLogging, ActorRef, Props, Terminated}
+import akka.actor.{Actor, ActorLogging, ActorRef, OneForOneStrategy, Props, SupervisorStrategy, Terminated}
 import scala.concurrent.duration._
 
 
@@ -11,18 +11,38 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
 
   import CoffeeHouse._
 
+
+  override val supervisorStrategy: SupervisorStrategy = {
+
+
+    val decider: SupervisorStrategy.Decider = {
+      case Guest.CaffeineException  => SupervisorStrategy.Stop
+      case Waiter.FrustratedException(coffeeType, guest) => {
+        barista.forward(Barista.PrepareCoffee(coffeeType, guest))
+
+        SupervisorStrategy.Restart
+      }
+    }
+
+    OneForOneStrategy()(decider.orElse(super.supervisorStrategy.decider))
+  }
+
+
   private val prepareCoffeeDuration: FiniteDuration =
     context.system.settings.config.getDuration("coffee-house.barista.prepare-coffee-duration",
       TimeUnit.MILLISECONDS).millis
 
-  private val barista: ActorRef = createBarista()
-  private val waiter: ActorRef = createWaiter()
   //private val finishCoffeeDuration: FiniteDuration = FiniteDuration(context.system.settings.config.getLong("coffee-house.guest.finish-coffee-duration"),scala.concurrent.duration.MILLISECONDS)
   private val finishCoffeeDuration: FiniteDuration = context.system.settings.config.getDuration("coffee-house.guest.finish-coffee-duration", TimeUnit.MILLISECONDS).millis
   private var guestBook: Map[ActorRef, Int] = Map.empty.withDefaultValue(0)
 
+  private val accuracy = context.system.settings.config.getInt("coffee-house.barista.accuracy")
+  private val maxComplaintCount  = context.system.settings.config.getInt("coffee-house.waiter.max-complaint-count")
+  private val barista: ActorRef = createBarista()
+  private val waiter: ActorRef = createWaiter()
+
+
   override def receive: Receive = {
-    case s: String => sender() ! s
     case Terminated(guest) =>
       guestBook = guestBook.removed(guest)
       log.info(s"Thanks $guest, for being our guest!")
@@ -33,16 +53,17 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
       context.watch(newGuest)
 
     case CoffeeHouse.ApproveCoffee(coffee, guest) if guestBook(guest) < caffeineLimit =>
+
       guestBook += guest -> (guestBook(guest) + 1)
       log.info(s"Guest $guest caffeine count incremented.")
-      barista.forward(Barista.PrepareCoffee(coffee, guest))
+      barista.tell(Barista.PrepareCoffee(coffee, guest),context.sender())
+      log.info(s"Guestbook $guestBook total limit is $caffeineLimit")
 
 
 
     //guestBook.updated(guest,guestBook(guest)+1)
 
     case CoffeeHouse.ApproveCoffee(coffee, guest) if guestBook(guest) == caffeineLimit =>
-      log.info(s"Sorry, $guestBook being $caffeineLimit")
       context.stop(guest)
       log.info(s"Sorry, $guest, but you have reached your limit.")
 
@@ -53,13 +74,13 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
   protected def createGuest(favouriteCoffee: Coffee, caffeineLimit: Int): ActorRef = context.actorOf(Guest.props(waiter, favouriteCoffee, finishCoffeeDuration, caffeineLimit))
 
   override def preStart(): Unit = {
-    super.preStart();
+    super.preStart()
     log.debug("CoffeHouse Open")
   }
 
-  protected def createWaiter(): ActorRef = context.actorOf(Waiter.props(self), "waiter")
+  protected def createWaiter(): ActorRef = context.actorOf(Waiter.props(self,barista,maxComplaintCount), "waiter")
 
-  protected def createBarista(): ActorRef = context.actorOf(Barista.props(finishCoffeeDuration), "barista")
+  protected def createBarista(): ActorRef = context.actorOf(Barista.props(prepareCoffeeDuration, accuracy), "barista")
 
 
 }
